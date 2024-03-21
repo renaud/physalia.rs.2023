@@ -102,20 +102,20 @@ dev.off()
 plot(sentdo[[4]])
 
 # RGB space
-im.plotRGB.user(sentdo, 3, 2, 1)  # it plots the first three layers in the RGB components
+im.plotRGB(sentdo, 3, 2, 1)  # it plots the first three layers in the RGB components
 
 # use of NIR
-im.plotRGB.user(sentdo, 4, 3, 2)  # it plots the first three layers in the RGB components
+im.plotRGB(sentdo, 4, 3, 2)  # it plots the green, red and NIR components
 
 # multiframe with the natural colours image and the false colour image
-par(mfrow=c(1,2))
-im.plotRGB.user(sentdo, 3, 2, 1)  # it plots the first three layers in the RGB components
-im.plotRGB.user(sentdo, 4, 3, 2)  # it plots the first three layers in the RGB components
+par(mfrow=c(2,2))
+im.plotRGB(sentdo, 3, 2, 1)  # it plots the first three layers in the RGB components
+im.plotRGB(sentdo, 4, 3, 2)  # it plots the green, red and NIR components
 
-im.plotRGB.user(sentdo, 3, 4, 2)  # it plots the first three layers in the RGB components
-im.plotRGB.user(sentdo, 3, 2, 4)  # it plots the first three layers in the RGB components
+im.plotRGB(sentdo, 3, 4, 2)  # it plots the first three layers in the RGB components
+im.plotRGB(sentdo, 3, 2, 4)  # it plots the first three layers in the RGB components
 
-# what is the band carrying the highest infomration
+# what is the band carrying the highest information?
 pairs(sentdo)
 
 
